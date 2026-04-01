@@ -1235,7 +1235,7 @@ const OnboardingFlow = ({ onComplete }: { onComplete: () => void }) => {
 
 const isPro = false;
 
-import Dashboard from './Dashboard';
+import Dashboard from '../Dashboard';
 
 export default function App() {
   const [view, setView] = useState<'landing' | 'login' | 'signup' | 'onboarding' | 'dashboard'>('landing');
