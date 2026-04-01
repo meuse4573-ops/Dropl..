@@ -1235,3 +1235,43 @@ const OnboardingFlow = ({ onComplete }: { onComplete: () => void }) => {
 
 const isPro = false;
 
+import Dashboard from './Dashboard';
+
+export default function App() {
+  const [view, setView] = useState<'landing' | 'login' | 'signup' | 'onboarding' | 'dashboard'>('landing');
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [view]);
+
+  if (view === 'login' || view === 'signup') {
+    return <AuthPage initialMode={view} onBack={() => setView('landing')} onComplete={() => setView('onboarding')} />;
+  }
+
+  if (view === 'onboarding') {
+    return <OnboardingFlow onComplete={() => setView('dashboard')} />;
+  }
+
+  if (view === 'dashboard') {
+    return <Dashboard onLogout={() => setView('landing')} />;
+  }
+
+  return (
+    <div className="min-h-screen bg-black selection:bg-[#e0e0e0] selection:text-black">
+      <Header onNavigate={setView} />
+      <main className="relative z-10">
+        <Hero onNavigate={setView} />
+        <Customers />
+        <Why />
+        <Solutions />
+        <Features />
+        <HowItWorks />
+        <Integrations />
+        <CaseStudies />
+        <Pricing onNavigate={setView} />
+        <FAQ onNavigate={setView} />
+      </main>
+      <Footer />
+    </div>
+  );
+}
