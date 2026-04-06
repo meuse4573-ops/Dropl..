@@ -46,7 +46,7 @@ const Header = ({ onNavigate }: { onNavigate: (view: 'landing' | 'login' | 'sign
       <div className="page-wrapper flex items-center justify-between relative">
         <div className="flex items-center gap-2">
           <div className="flex items-center gap-2 cursor-pointer group" onClick={() => onNavigate('landing')}>
-            <span className="text-2xl font-title text-white">Dropl</span>
+            <span className="text-2xl font-title text-white">SponsorAI</span>
             <ChevronRight className="w-4 h-4 text-white rotate-90 group-hover:-rotate-90 transition-transform" />
           </div>
         </div>
@@ -96,7 +96,7 @@ const Hero = ({ onNavigate }: { onNavigate: (view: 'landing' | 'login' | 'signup
             transition={{ duration: 0.6 }}
             className="common-title text-5xl lg:text-7xl mb-6"
           >
-            Meet Dropl, the simplest way to sell digital products globally.
+            Your AI agent that negotiates brand deals while you create.
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -104,7 +104,7 @@ const Hero = ({ onNavigate }: { onNavigate: (view: 'landing' | 'login' | 'signup
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-lg text-[#a8a8a8] mb-8 max-w-lg leading-relaxed"
           >
-            Upload your product. Share your link. Get paid by buyers anywhere in the world — automatically, instantly, every time.
+            Stop drowning in DMs and email threads. Our AI researches brands, negotiates rates, and closes deals — automatically. You focus on content, we handle the business.
           </motion.p>
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -136,7 +136,7 @@ const Hero = ({ onNavigate }: { onNavigate: (view: 'landing' | 'login' | 'signup
         >
           <div className="relative glass-card p-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl max-w-md w-full transform lg:translate-x-12">
             <div className="flex items-center justify-between mb-4 pb-2 border-bottom border-white/5">
-              <div className="text-[10px] text-white/40 font-mono">dropl.com/dropl</div>
+              <div className="text-[10px] text-white/40 font-mono">sponsorai.co/yourname</div>
               <div className="flex gap-1">
                 <div className="w-1.5 h-1.5 rounded-full bg-white/20" />
                 <div className="w-1.5 h-1.5 rounded-full bg-white/20" />
@@ -146,29 +146,29 @@ const Hero = ({ onNavigate }: { onNavigate: (view: 'landing' | 'login' | 'signup
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-full bg-gradient-to-br from-pink-500 to-blue-500" />
               <div>
-                <div className="text-sm font-medium text-white">Dropl Designs</div>
-                <div className="text-[10px] text-white/40">Products · Subscribers · Earnings</div>
+                <div className="text-sm font-medium text-white">Your Brand Agent</div>
+                <div className="text-[10px] text-white/40">Active Deals · Negotiations · Revenue</div>
               </div>
             </div>
             <div className="space-y-3">
               <div className="p-3 rounded-xl bg-white/5 border border-white/10 flex items-center justify-between">
                 <div>
-                  <div className="text-xs font-medium text-white">Notion Finance Template</div>
-                  <div className="text-[10px] text-white/40">$19</div>
+                  <div className="text-xs font-medium text-white">Nike Collaboration</div>
+                  <div className="text-[10px] text-white/40">$5,000 · Negotiating</div>
                 </div>
-                <button className="px-3 py-1 rounded-lg bg-white text-black text-[10px] font-bold">Buy now</button>
+                <button className="px-3 py-1 rounded-lg bg-white text-black text-[10px] font-bold">View</button>
               </div>
               <div className="p-3 rounded-xl bg-white/5 border border-white/10 flex items-center justify-between">
                 <div>
-                  <div className="text-xs font-medium text-white">Brand Identity Kit</div>
-                  <div className="text-[10px] text-white/40">$29</div>
+                  <div className="text-xs font-medium text-white">Spotify Partnership</div>
+                  <div className="text-[10px] text-white/40">$3,500 · Awaiting Approval</div>
                 </div>
-                <button className="px-3 py-1 rounded-lg bg-white text-black text-[10px] font-bold">Buy now</button>
+                <button className="px-3 py-1 rounded-lg bg-white text-black text-[10px] font-bold">View</button>
               </div>
             </div>
             <div className="mt-6 pt-4 border-t border-white/5 flex justify-between items-center">
-              <div className="text-[10px] text-white/40 uppercase tracking-widest">Total Earnings</div>
-              <div className="text-lg font-title text-white">$1,240 <span className="text-[10px] font-sans opacity-40 font-normal">earned this month</span></div>
+              <div className="text-[10px] text-white/40 uppercase tracking-widest">Deal Value Secured</div>
+              <div className="text-lg font-title text-white">$12,400 <span className="text-[10px] font-sans opacity-40 font-normal">this month</span></div>
             </div>
           </div>
         </motion.div>
@@ -181,13 +181,13 @@ const Customers = () => (
   <section className="py-16 border-t border-white/5">
     <div className="page-wrapper">
       <p className="text-center text-sm mb-10 flex items-center justify-center gap-2 flex-wrap">
-        <span className="font-medium text-[#d9f5fd]">Payments powered by</span>
-        <span className="font-bold text-white">Paddle</span>
+        <span className="font-medium text-[#d9f5fd]">Intelligence powered by</span>
+        <span className="font-bold text-white">NeMo Guardrails</span>
         <span className="opacity-30">·</span>
-        <span>Built for creators selling to the whole world.</span>
+        <span>Built for creators ready to monetize their influence.</span>
       </p>
       <div className="flex flex-wrap justify-center items-center gap-x-16 gap-y-10 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
-        {['Notion', 'Google Drive', 'Canva', 'Beehiiv', 'ConvertKit', 'Gumroad'].map((logo) => (
+        {['TikTok', 'Instagram', 'YouTube', 'Twitter', 'Newsletter', 'Podcast'].map((logo) => (
           <span key={logo} className="text-xl font-title text-white">{logo}</span>
         ))}
       </div>
@@ -222,10 +222,10 @@ const Why = () => (
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {[
-          { title: "Built for the global creator.", desc: "Gumroad was designed for a different internet. We are built for the one creators actually live in — TikTok bios, global buyers, instant delivery, zero complexity." },
-          { title: "Grounded in your earnings.", desc: "Every feature exists to help you make more money. Your storefront, your email list, your affiliates — all working while you create." },
-          { title: "Engineered to grow with you.", desc: "Start free with zero monthly cost. Upgrade only when your revenue justifies it. We grow when you grow — that is the only business model that makes sense." },
-          { title: "Transparent by design.", desc: "See exactly what you earn, what we take, and when you get paid. No hidden fees, no fine print, no surprises on payout day." }
+          { title: "Built for the modern creator.", desc: "Old agencies move slow and take 20%. We move at the speed of your content — AI-powered, instant responses, zero bureaucracy." },
+          { title: "Grounded in your value.", desc: "Every negotiation is backed by your real audience data. We argue for your worth based on metrics, not guesswork." },
+          { title: "Engineered to close deals.", desc: "Our AI doesn't just reply — it persuades. Using principled negotiation tactics to secure better rates and terms." },
+          { title: "Transparent by design.", desc: "See every brand researched, every email drafted, every negotiation strategy. You approve everything before it sends." }
         ].map((card, i) => (
           <motion.div 
             key={i}
@@ -248,16 +248,16 @@ const Solutions = () => (
   <section id="solutions" className="py-24">
     <div className="page-wrapper">
       <h2 className="common-title text-6xl lg:text-8xl mb-20">
-        <span className="block">1 storefront.</span>
-        <span className="block opacity-70">Unlimited products.</span>
-        <span className="block opacity-40">The whole world buying.</span>
+        <span className="block">1 AI agent.</span>
+        <span className="block opacity-70">Unlimited brand deals.</span>
+        <span className="block opacity-40">The whole world sponsoring.</span>
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
         {[
-          { icon: <Share2 className="w-8 h-8 text-[#a8a8a8]" />, title: "One link. Every product.", desc: "Share a single storefront URL everywhere. Every product you have ever made, in one place, always updated." },
-          { icon: <Layout className="w-8 h-8 text-[#a8a8a8]" />, title: "Instant delivery. Every time.", desc: "The second a payment clears, the buyer gets their file. No manual steps. No delays. No support tickets about missing files." },
-          { icon: <Monitor className="w-8 h-8 text-[#a8a8a8]" />, title: "Your audience, owned by you.", desc: "Every buyer and freebie download becomes a subscriber. Build your list automatically without touching a single form." }
+          { icon: <Share2 className="w-8 h-8 text-[#a8a8a8]" />, title: "One inbox. Every opportunity.", desc: "All brand DMs and emails centralized. The AI reads, categorizes, and prioritizes so you never miss a high-value deal." },
+          { icon: <Layout className="w-8 h-8 text-[#a8a8a8]" />, title: "Instant research. Every brand.", desc: "Before any reply, the AI deep-researches the brand — PR history, marketing spend, competitor moves, sentiment analysis." },
+          { icon: <Monitor className="w-8 h-8 text-[#a8a8a8]" />, title: "Your deals, owned by you.", desc: "Every conversation tracked in your CRM. Never repeat yourself, never miss a follow-up, always know where deals stand." }
         ].map((item, i) => (
           <div key={i} className="flex flex-col gap-6">
             {item.icon}
@@ -273,9 +273,9 @@ const Solutions = () => (
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {[
-          { label: "PAYMENTS", title: "Paddle as your payment layer.", desc: "Every transaction runs through Paddle — the global Merchant of Record. That means fraud protection, chargeback handling, and buyer trust built in from day one.", img: "badge_security" },
-          { label: "TAX & COMPLIANCE", title: "Global tax handled automatically.", desc: "VAT, GST, and sales tax across 200+ countries calculated and remitted by Paddle. You never file a tax return for a single foreign sale.", img: "badge_compliance" },
-          { label: "DELIVERY", title: "Files stored and delivered securely.", desc: "Every uploaded file is stored privately. Download links are time-limited and single-use. Your products cannot be shared or pirated through the delivery link.", img: "badge_hosting" }
+          { label: "RESEARCH", title: "Tavily as your intelligence layer.", desc: "Every brand analysis runs through Tavily — real-time web search, news aggregation, and social sentiment. You know more than they expect.", img: "badge_security" },
+          { label: "NEGOTIATION", title: "Principled negotiation on autopilot.", desc: "The AI argues for mutual wins but stays firm on your creative control and timeline. No low-ball acceptance — ever.", img: "badge_compliance" },
+          { label: "CRM", title: "Relationship memory that never forgets.", desc: "Every touchpoint stored. The AI remembers what you promised, what they offered, and when to follow up for maximum close rate.", img: "badge_hosting" }
         ].map((item, i) => (
           <div key={i} className="glass-card p-8 h-[260px] flex flex-col justify-between">
             <div className="flex justify-between items-start">
@@ -303,13 +303,13 @@ const Features = () => (
 
       <div className="relative flex flex-col gap-[60px] md:gap-[120px] pb-32">
         {[
-          { color: "bg-[#2c150c]", title: "Sell your product on every platform at once.", desc: "Share one link — your storefront works on TikTok, Instagram, YouTube, Twitter, newsletters, and anywhere else you exist. Buyers land and buy without friction no matter where they came from." },
-          { color: "bg-[#032b35]", title: "Turn every sale into a second sale.", desc: "The moment a buyer completes their purchase, they see a timed offer for your next product at a discount. One click. No re-entering card details. Their wallet is already open." },
-          { color: "bg-[#1d2c0c]", title: "Go live in under 15 minutes. No developer needed.", desc: "Create your account, upload your first product, set your price, and share your link. That is the entire setup. Anyone can do it — no technical knowledge required." },
-          { color: "bg-[#361e02]", title: "Set your price your way. Fixed, flexible, or free.", desc: "Charge a fixed price, let buyers pay what they want with a minimum, or make it completely free to build your email list. You decide how every product is sold." },
-          { color: "bg-[#2c150c]", title: "Build your email list on autopilot.", desc: "Every buyer is automatically added to your subscriber list. Offer a freebie at $0 and capture emails from people who are not yet ready to buy. Then broadcast to all of them when your next product drops." },
-          { color: "bg-[#032b35]", title: "See exactly where your revenue comes from.", desc: "Track every sale, every subscriber, every affiliate referral, and every discount code used. Your dashboard tells the full story so you always know what is working." },
-          { color: "bg-[#1d2c0c]", title: "Your storefront updates the moment you do.", desc: "Add a new product and it appears on your storefront instantly. Edit a price, change a cover image, unpublish a product — everything syncs in real time with no cache delays." }
+          { color: "bg-[#2c150c]", title: "Research every brand before you reply.", desc: "The AI scans news, social sentiment, competitor sponsorships, and recent PR. You walk into every conversation knowing exactly what they need and what they have paid others." },
+          { color: "bg-[#032b35]", title: "Negotiate like you have a team behind you.", desc: "Draft responses that argue your worth using real audience metrics. The AI suggests counter-offers, timeline protections, and creative control clauses — automatically." },
+          { color: "bg-[#1d2c0c]", title: "Go live in under 15 minutes. No manager needed.", desc: "Connect your email and DMs. The AI starts categorizing opportunities immediately. No hiring, no training, no 20% agency cut." },
+          { color: "bg-[#361e02]", title: "Set your boundaries. Fixed, flexible, or firm.", desc: "Set minimum rates, blocked brands, and non-negotiable terms. The AI enforces your rules in every conversation while staying polite and professional." },
+          { color: "bg-[#2c150c]", title: "Build your sponsor pipeline on autopilot.", desc: "Every brand that reaches out is scored 1-10 for fit. High scores get fast responses. Low scores get polite declines. Your time is protected." },
+          { color: "bg-[#032b35]", title: "See exactly where your revenue comes from.", desc: "Track every deal in negotiation, every closed contract, every pending payment. Your dashboard shows the full pipeline so you always know what's closing next." },
+          { color: "bg-[#1d2c0c]", title: "Your agent updates the moment you do.", desc: "Change your rates, update your media kit, adjust your availability — every active negotiation reflects your new terms instantly." }
         ].map((card, i) => (
           <div 
             key={i} 
@@ -337,14 +337,14 @@ const HowItWorks = () => (
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-20">
         <div className="lg:col-span-3 text-center lg:text-left">
           <h3 className="common-title text-black text-4xl mb-2">Four steps.</h3>
-          <p className="text-2xl text-black/50 font-title">From account to first sale in minutes.</p>
+          <p className="text-2xl text-black/50 font-title">From setup to first deal in minutes.</p>
         </div>
 
         {[
-          { step: "01", title: "Upload your product.", desc: "Add your file — PDF, ZIP, MP3, Notion link, Google Drive link, anything digital. Write a title, add a cover image, set your price. Done.", img: "feed", accent: true },
-          { step: "02", title: "Make it yours.", desc: "Set your price, add a product description, choose a cover image, and set up your upsell offer. Your storefront reflects your brand instantly.", img: "customize" },
-          { step: "03", title: "Share your link.", desc: "Copy your storefront URL — dropl.com/yourname — and drop it in every bio, every video, every post. It is the only link you will ever need.", img: "test" },
-          { step: "04", title: "Get paid.", desc: "Watch the sales come in. Files deliver automatically, your list grows by itself, and your earnings land in your bank on schedule.", img: "run", accent: true }
+          { step: "01", title: "Connect your channels.", desc: "Link your email, Instagram DMs, and any inbox where brands reach out. The AI monitors everything 24/7 so no opportunity slips through.", img: "feed", accent: true },
+          { step: "02", title: "Set your rules.", desc: "Define your minimum rates, preferred brand categories, and non-negotiables. The AI uses these to score opportunities and negotiate on your behalf.", img: "customize" },
+          { step: "03", title: "Let the AI work.", desc: "When a brand reaches out, the AI researches them, drafts a response, and negotiates terms. You get a notification to approve before anything sends.", img: "test" },
+          { step: "04", title: "Approve and earn.", desc: "Review the AI's work, hit approve, and watch deals close. The AI handles follow-ups, contract reminders, and relationship maintenance.", img: "run", accent: true }
         ].map((item, i) => (
           <div key={i} className="flex flex-col gap-8">
             <div className="flex items-center gap-6">
@@ -370,7 +370,7 @@ const HowItWorks = () => (
         ))}
 
         <div className="lg:col-span-3 flex flex-col items-center text-center mt-12">
-          <h3 className="common-title text-black text-3xl mb-2">Ready to start selling?</h3>
+          <h3 className="common-title text-black text-3xl mb-2">Ready to automate your deals?</h3>
           <p className="text-black/50 text-xl font-title mb-8">Try it yourself in under 5 minutes.</p>
           <div className="flex flex-col items-center gap-4">
             <button className="common-button common-button-primary px-8 py-4 text-lg flex items-center gap-2">
@@ -389,30 +389,30 @@ const HowItWorks = () => (
 const CaseStudies = () => (
   <section id="case-studies" className="py-24 bg-black text-white">
     <div className="page-wrapper">
-      <h2 className="common-title text-5xl mb-4">Real creators, real revenue.</h2>
-      <p className="text-2xl text-white/50 font-title mb-20">See what happens when selling gets simple.</p>
+      <h2 className="common-title text-5xl mb-4">Real creators, real deals.</h2>
+      <p className="text-2xl text-white/50 font-title mb-20">See what happens when negotiation gets intelligent.</p>
 
       <div className="flex flex-col lg:flex-row gap-6 h-auto lg:h-[560px]">
         {[
           { 
-            name: "Antonin Raffarin", 
-            role: "Digital Creator", 
-            company: "Dropl User", 
-            quote: "I made my first sale 11 minutes after signing up. I had been putting off selling my template for months because every other platform felt complicated. This just worked.",
+            name: "Priya Sharma", 
+            role: "Lifestyle Creator", 
+            company: "SponsorAI User", 
+            quote: "I closed my first $5K brand deal 3 days after setting this up. The AI negotiated a 40% higher rate than I would have asked for myself.",
             img: "afs_foil"
           },
           { 
-            name: "Geoffrey Safar", 
-            role: "Notion Architect", 
-            company: "Dropl User", 
-            quote: "The upsell feature alone doubled my average order value in the first week. I set it up once and it runs itself.",
+            name: "Marcus Chen", 
+            role: "Tech Reviewer", 
+            company: "SponsorAI User", 
+            quote: "The research feature is insane. The AI knew the brand's Q3 marketing goals before I even replied. I sounded like I had a whole team behind me.",
             img: "emma"
           },
           { 
-            name: "Jimmy Cohen", 
-            role: "Template Designer", 
-            company: "Dropl User", 
-            quote: "I moved everything here from Gumroad. The global payments and automatic tax handling saved me hours every month.",
+            name: "Sofia Rodriguez", 
+            role: "Fitness Coach", 
+            company: "SponsorAI User", 
+            quote: "I used to spend 4 hours a day on brand emails. Now I spend 15 minutes reviewing what the AI drafted. My content quality went up, my income doubled.",
             img: "spidervo"
           }
         ].map((item, i) => (
@@ -441,7 +441,7 @@ const CaseStudies = () => (
 
               <div className="max-w-xl">
                 <p className="text-white text-lg leading-relaxed mb-6 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
-                  “{item.quote}”
+                  "{item.quote}"
                 </p>
                 <div className="flex items-center gap-2">
                   <span className="font-medium text-white">{item.name}</span>
@@ -464,16 +464,16 @@ const Pricing = ({ onNavigate }: { onNavigate: (view: 'landing' | 'login' | 'sig
       name: "Starter",
       badge: "Free",
       price: "$0",
-      subtext: "+ 10% per sale, no monthly fee",
+      subtext: "5% of closed deals, no monthly fee",
       features: [
-        { text: "Your own storefront at dropl.io/username", included: true },
-        { text: "Unlimited products", included: true },
-        { text: "Automatic file delivery by email", included: true },
-        { text: "Discount codes", included: true },
-        { text: "Email list up to 100 subscribers", included: true },
-        { text: "Email broadcasts (locked)", included: false },
-        { text: "Upsell pages (locked)", included: false },
-        { text: "Affiliate system (locked)", included: false },
+        { text: "AI email monitoring & triage", included: true },
+        { text: "Basic brand research (5/month)", included: true },
+        { text: "Draft response generation", included: true },
+        { text: "Deal value tracking", included: true },
+        { text: "Up to 10 active negotiations", included: true },
+        { text: "Advanced negotiation tactics (locked)", included: false },
+        { text: "CRM relationship history (locked)", included: false },
+        { text: "Priority brand scoring (locked)", included: false },
       ],
       cta: "Get started →",
       note: "No credit card required",
@@ -483,16 +483,16 @@ const Pricing = ({ onNavigate }: { onNavigate: (view: 'landing' | 'login' | 'sig
     {
       name: "Pro",
       badge: "Most Popular",
-      price: "$99",
-      subtext: "per month + 5% per sale",
+      price: "$49",
+      subtext: "per month + 3% of closed deals",
       features: [
         { text: "Everything in Starter", included: true },
-        { text: "Unlimited email subscribers", included: true },
-        { text: "Email broadcasts to all buyers", included: true },
-        { text: "Thank-you page upsells with countdown timer", included: true },
-        { text: "Full affiliate system with commission tracking", included: true },
-        { text: "Discount codes with usage limits", included: true },
-        { text: "Dashboard analytics", included: true },
+        { text: "Unlimited brand research", included: true },
+        { text: "Advanced negotiation tactics", included: true },
+        { text: "Full CRM with relationship memory", included: true },
+        { text: "Brand fit scoring (1-10)", included: true },
+        { text: "Multi-channel DM monitoring", included: true },
+        { text: "Contract deadline tracking", included: true },
         { text: "Priority support", included: true },
       ],
       cta: "Get started →",
@@ -503,17 +503,17 @@ const Pricing = ({ onNavigate }: { onNavigate: (view: 'landing' | 'login' | 'sig
     {
       name: "Business",
       badge: "Business",
-      price: "$199",
-      subtext: "per month + 3% per sale",
+      price: "$149",
+      subtext: "per month + 1% of closed deals",
       features: [
         { text: "Everything in Pro", included: true },
-        { text: "Lowest platform fee — only 3% per sale", included: true },
-        { text: "Custom domain for your storefront", included: true },
-        { text: "Remove Dropl branding", included: true },
-        { text: "Advanced analytics and export", included: true },
-        { text: "Dedicated account support", included: true },
-        { text: "Early access to new features", included: true },
-        { text: "Multiple team members", included: true },
+        { text: "Lowest success fee — only 1%", included: true },
+        { text: "Custom negotiation playbooks", included: true },
+        { text: "Team collaboration (3 seats)", included: true },
+        { text: "White-label agent responses", included: true },
+        { text: "API access for custom workflows", included: true },
+        { text: "Dedicated account strategist", included: true },
+        { text: "Early access to new AI models", included: true },
       ],
       cta: "Get started →",
       note: "No credit card required",
@@ -527,7 +527,7 @@ const Pricing = ({ onNavigate }: { onNavigate: (view: 'landing' | 'login' | 'sig
       <div className="page-wrapper">
         <div className="text-center mb-20">
           <h2 className="common-title text-black text-5xl mb-4">No surprises, no hidden fees.</h2>
-          <p className="text-2xl text-black/50 font-title">Pricing that makes sense as you grow.</p>
+          <p className="text-2xl text-black/50 font-title">Pricing that makes sense as you earn.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
@@ -600,11 +600,11 @@ const FAQ = ({ onNavigate }: { onNavigate: (view: 'landing' | 'login' | 'signup'
 
         <div className="lg:w-2/3 flex flex-col gap-12">
           {[
-            { q: "Is it really free to start?", a: "Yes. Create your account, upload products, and start selling with zero monthly cost. We take 10% on each sale — and only when you actually earn." },
-            { q: "How do buyers pay? What about international buyers?", a: "Buyers pay with card, PayPal, Apple Pay, or Google Pay. Paddle handles the checkout and supports buyers in over 200 countries with local currency display." },
-            { q: "What kinds of products can I sell?", a: "Anything digital — PDFs, ZIP files, MP3s, Notion templates, Google Drive links, Figma files, video links. If you can put it in a file or a URL, you can sell it here." },
-            { q: "Do I have to handle taxes for international sales?", a: "No. Paddle is the Merchant of Record. They calculate, collect, and remit VAT and sales tax in every country on your behalf. You never touch it." },
-            { q: "What happens if I want to cancel?", a: "No long-term contracts. Cancel anytime. Your storefront data, product files, and subscriber list are yours — export them whenever you want." }
+            { q: "Is it really free to start?", a: "Yes. Connect your email, set your preferences, and start receiving AI-drafted responses with zero monthly cost. We only take a small percentage when you actually close a deal." },
+            { q: "How does the AI know what to say?", a: "You set your rules — minimum rates, brand categories, tone preferences. The AI researches each brand and drafts responses that match your voice and protect your interests. You approve everything before it sends." },
+            { q: "What channels does it monitor?", a: "Currently email and Instagram DMs. We're adding Twitter/X DMs, TikTok messages, and LinkedIn soon. All centralized in one dashboard." },
+            { q: "Can I edit what the AI writes?", a: "Absolutely. Every draft is presented for your approval. Edit it, approve it, or reject it. You're always in control." },
+            { q: "What if I already have a manager?", a: "Many creators use SponsorAI alongside their manager to handle initial outreach and negotiation, freeing the manager to focus on high-value partnerships and strategy." }
           ].map((item, i) => (
             <div key={i} className="flex flex-col gap-4 overflow-hidden">
               <motion.div 
@@ -642,8 +642,8 @@ const Footer = () => (
   <footer className="pt-24 pb-12 bg-white text-black">
     <div className="page-wrapper">
       <div className="mb-24 text-center">
-        <h2 className="common-title text-black text-4xl md:text-6xl mb-6">Start selling on Dropl today.</h2>
-        <p className="text-xl text-black/50 mb-10 max-w-2xl mx-auto">Join thousands of creators already on the waitlist. Early signups get priority access and locked-in pricing at launch.</p>
+        <h2 className="common-title text-black text-4xl md:text-6xl mb-6">Start closing brand deals today.</h2>
+        <p className="text-xl text-black/50 mb-10 max-w-2xl mx-auto">Join thousands of creators automating their sponsorships. Early signups get priority access and locked-in pricing at launch.</p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <button className="common-button common-button-primary px-8 py-4 text-lg">Get started →</button>
           <button className="common-button bg-[#ebebeb] text-black px-8 py-4 text-lg">Watch demo ▷</button>
@@ -688,9 +688,9 @@ const Footer = () => (
             <span>·</span>
             <a href="#" className="hover:text-black">Privacy policy</a>
           </div>
-          <div>© 2025 Dropl. All rights reserved.</div>
+          <div>© 2025 SponsorAI. All rights reserved.</div>
         </div>
-        <div className="text-[15vw] font-title text-black/5 leading-none text-center select-none">Dropl</div>
+        <div className="text-[15vw] font-title text-black/5 leading-none text-center select-none">SponsorAI</div>
       </div>
     </div>
   </footer>
@@ -706,14 +706,14 @@ const Integrations = () => (
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-32">
         {[
-          { name: "Paddle", desc: "Payments" },
-          { name: "Notion", desc: "Sell Notion templates directly" },
-          { name: "Google Drive", desc: "Deliver Drive files automatically" },
-          { name: "Canva", desc: "Sell your Canva designs" },
-          { name: "ConvertKit", desc: "Sync your subscriber list" },
-          { name: "Beehiiv", desc: "Connect your newsletter" },
-          { name: "Zapier", desc: "Automate anything" },
-          { name: "Lemon Squeezy", desc: "Migrate in one click" }
+          { name: "NeMo Guardrails", desc: "AI Safety" },
+          { name: "Tavily", desc: "Web Research" },
+          { name: "Gmail", desc: "Email Inbox" },
+          { name: "Instagram", desc: "DM Monitoring" },
+          { name: "Notion", desc: "Deal Tracking" },
+          { name: "Zapier", desc: "Automate Anything" },
+          { name: "Slack", desc: "Team Notifications" },
+          { name: "Hugging Face", desc: "AI Hosting" }
         ].map((item, i) => (
           <div key={i} className="glass-card p-6 text-center">
             <div className="text-lg font-bold mb-1">{item.name}</div>
@@ -732,8 +732,8 @@ const Integrations = () => (
           />
         </div>
         <div className="flex-1">
-          <h2 className="common-title text-4xl mb-4">Your orbit of revenue.</h2>
-          <p className="text-2xl text-white/50 font-title">Dropl connects creators with buyers worldwide.</p>
+          <h2 className="common-title text-4xl mb-4">Your orbit of brand deals.</h2>
+          <p className="text-2xl text-white/50 font-title">SponsorAI connects creators with global sponsors automatically.</p>
         </div>
       </div>
     </div>
@@ -760,7 +760,7 @@ const AuthPage = ({ initialMode, onBack, onComplete }: { initialMode: 'login' | 
 
       <header className="relative z-10 py-8 px-6 md:px-12 flex items-center justify-between">
         <div className="flex items-center gap-2 cursor-pointer group" onClick={onBack}>
-          <span className="text-2xl font-title text-white">Dropl</span>
+          <span className="text-2xl font-title text-white">SponsorAI</span>
           <ChevronRight className="w-4 h-4 text-white rotate-90 group-hover:-rotate-90 transition-transform" />
         </div>
         <button 
@@ -854,14 +854,14 @@ const AuthPage = ({ initialMode, onBack, onComplete }: { initialMode: 'login' | 
           </div>
 
           <p className="text-center mt-8 text-[10px] text-[#a8a8a8] uppercase tracking-widest leading-relaxed">
-            By continuing, you agree to Dropl's <br />
+            By continuing, you agree to SponsorAI's <br />
             <a href="#" className="text-white hover:underline">Terms of Service</a> and <a href="#" className="text-white hover:underline">Privacy Policy</a>.
           </p>
         </motion.div>
       </main>
 
       <footer className="relative z-10 py-8 text-center text-[10px] text-[#a8a8a8] uppercase tracking-widest">
-        © 2025 Dropl · All rights reserved
+        © 2025 SponsorAI · All rights reserved
       </footer>
     </div>
   );
@@ -886,9 +886,9 @@ const OnboardingFlow = ({ onComplete }: { onComplete: () => void }) => {
   const nextStep = () => setStep(prev => prev + 1);
 
   const steps = [
-    { id: 1, label: 'Storefront' },
-    { id: 2, label: 'Audience' },
-    { id: 3, label: 'First Product' }
+    { id: 1, label: 'Profile' },
+    { id: 2, label: 'Channels' },
+    { id: 3, label: 'Preferences' }
   ];
 
   const renderStepIndicator = () => (
@@ -914,7 +914,7 @@ const OnboardingFlow = ({ onComplete }: { onComplete: () => void }) => {
 
       <header className="relative z-10 py-8 px-6 md:px-12">
         <div className="flex items-center gap-2">
-          <span className="text-2xl font-title text-white">Dropl</span>
+          <span className="text-2xl font-title text-white">SponsorAI</span>
           <ChevronRight className="w-4 h-4 text-white rotate-90" />
         </div>
       </header>
@@ -931,18 +931,18 @@ const OnboardingFlow = ({ onComplete }: { onComplete: () => void }) => {
             >
               <div className="glass-card p-8 md:p-10 rounded-[32px] border border-white/10 bg-white/5 backdrop-blur-xl">
                 <div className="text-center mb-10">
-                  <h1 className="common-title text-3xl md:text-4xl mb-3">Set up your storefront</h1>
+                  <h1 className="common-title text-3xl md:text-4xl mb-3">Set up your profile</h1>
                   <p className="text-[#a8a8a8] text-sm leading-relaxed">
-                    This is your public page. Buyers will land here from your TikTok, Instagram, and every link you share.
+                    This is how brands will see you. Your AI agent will use this to negotiate on your behalf.
                   </p>
                 </div>
 
                 <div className="space-y-6">
                   <div className="space-y-2">
-                    <label className="text-xs font-medium text-[#a8a8a8] uppercase tracking-wider ml-1">Display Name</label>
+                    <label className="text-xs font-medium text-[#a8a8a8] uppercase tracking-wider ml-1">Creator Name</label>
                     <input 
                       type="text" 
-                      placeholder="Your name or brand name"
+                      placeholder="Your name or channel name"
                       value={formData.displayName}
                       onChange={(e) => setFormData({ ...formData, displayName: e.target.value })}
                       className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/20 focus:outline-none focus:border-white/30 transition-colors"
@@ -950,15 +950,15 @@ const OnboardingFlow = ({ onComplete }: { onComplete: () => void }) => {
                   </div>
 
                   <div className="space-y-2">
-                    <label className="text-xs font-medium text-[#a8a8a8] uppercase tracking-wider ml-1">Your Dropl URL</label>
+                    <label className="text-xs font-medium text-[#a8a8a8] uppercase tracking-wider ml-1">Your SponsorAI URL</label>
                     <div className="relative">
-                      <div className="absolute left-4 top-1/2 -translate-y-1/2 text-white/40 text-sm">dropl.io/</div>
+                      <div className="absolute left-4 top-1/2 -translate-y-1/2 text-white/40 text-sm">sponsorai.co/</div>
                       <input 
                         type="text" 
                         placeholder="yourname"
                         value={formData.username}
                         onChange={(e) => setFormData({ ...formData, username: e.target.value })}
-                        className="w-full bg-white/5 border border-white/10 rounded-xl pl-[72px] pr-10 py-3 text-white placeholder:text-white/20 focus:outline-none focus:border-white/30 transition-colors"
+                        className="w-full bg-white/5 border border-white/10 rounded-xl pl-[88px] pr-10 py-3 text-white placeholder:text-white/20 focus:outline-none focus:border-white/30 transition-colors"
                       />
                       {formData.username && (
                         <div className="absolute right-4 top-1/2 -translate-y-1/2">
@@ -974,9 +974,9 @@ const OnboardingFlow = ({ onComplete }: { onComplete: () => void }) => {
                   </div>
 
                   <div className="space-y-3">
-                    <label className="text-xs font-medium text-[#a8a8a8] uppercase tracking-wider ml-1">What do you sell?</label>
+                    <label className="text-xs font-medium text-[#a8a8a8] uppercase tracking-wider ml-1">What is your niche?</label>
                     <div className="flex flex-wrap gap-2">
-                      {['Digital Templates', 'eBooks / PDFs', 'Music / Audio', 'Courses / Guides', 'Other digital files'].map((option) => (
+                      {['Lifestyle', 'Tech', 'Fitness', 'Finance', 'Gaming', 'Education', 'Fashion', 'Other'].map((option) => (
                         <button
                           key={option}
                           onClick={() => setFormData({ ...formData, whatDoYouSell: option })}
@@ -1011,9 +1011,9 @@ const OnboardingFlow = ({ onComplete }: { onComplete: () => void }) => {
             >
               <div className="glass-card p-8 md:p-10 rounded-[32px] border border-white/10 bg-white/5 backdrop-blur-xl">
                 <div className="text-center mb-10">
-                  <h1 className="common-title text-3xl md:text-4xl mb-3">Tell us about your audience</h1>
+                  <h1 className="common-title text-3xl md:text-4xl mb-3">Connect your channels</h1>
                   <p className="text-[#a8a8a8] text-sm leading-relaxed">
-                    Help us personalise your Dropl dashboard for how you actually create.
+                    Link where brands reach out. The AI will monitor these 24/7 for sponsorship opportunities.
                   </p>
                 </div>
 
@@ -1021,15 +1021,15 @@ const OnboardingFlow = ({ onComplete }: { onComplete: () => void }) => {
                   <div className="space-y-3">
                     <label className="text-xs font-medium text-[#a8a8a8] uppercase tracking-wider ml-1">Where do you create content?</label>
                     <div className="flex flex-wrap gap-2">
-                      {['TikTok', 'Instagram', 'YouTube', 'Twitter / X', 'Newsletter', 'Podcast', "I don't create content"].map((option) => (
+                      {['TikTok', 'Instagram', 'YouTube', 'Twitter / X', 'Newsletter', 'Podcast', "I don't create content yet"].map((option) => (
                         <button
                           key={option}
                           onClick={() => {
                             const current = formData.platforms;
-                            if (option === "I don't create content") {
+                            if (option === "I don't create content yet") {
                               setFormData({ ...formData, platforms: current.includes(option) ? [] : [option] });
                             } else {
-                              const filtered = current.filter(p => p !== "I don't create content");
+                              const filtered = current.filter(p => p !== "I don't create content yet");
                               if (filtered.includes(option)) {
                                 setFormData({ ...formData, platforms: filtered.filter(p => p !== option) });
                               } else {
@@ -1045,24 +1045,24 @@ const OnboardingFlow = ({ onComplete }: { onComplete: () => void }) => {
                     </div>
                   </div>
 
-                  {!formData.platforms.includes("I don't create content") && (
+                  {!formData.platforms.includes("I don't create content yet") && (
                     <>
                       <div className="space-y-2">
                         <label className="text-xs font-medium text-[#a8a8a8] uppercase tracking-wider ml-1">Paste your main channel link</label>
                         <input 
                           type="url" 
-                          placeholder="https://tiktok.com/@yourhandle"
+                          placeholder="https://instagram.com/yourhandle"
                           value={formData.channelLink}
                           onChange={(e) => setFormData({ ...formData, channelLink: e.target.value })}
                           className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/20 focus:outline-none focus:border-white/30 transition-colors"
                         />
-                        <p className="text-[10px] text-[#a8a8a8] ml-1">We'll use this to set up your storefront bio.</p>
+                        <p className="text-[10px] text-[#a8a8a8] ml-1">We'll use this to build your media kit.</p>
                       </div>
 
                       <div className="space-y-3">
                         <label className="text-xs font-medium text-[#a8a8a8] uppercase tracking-wider ml-1">How big is your audience?</label>
                         <div className="flex flex-wrap gap-2">
-                          {['Under 1K', '1K – 10K', '10K – 100K', '100K+'].map((option) => (
+                          {['Under 1K', '1K – 10K', '10K – 100K', '100K – 500K', '500K+'].map((option) => (
                             <button
                               key={option}
                               onClick={() => setFormData({ ...formData, audienceSize: option })}
@@ -1077,9 +1077,9 @@ const OnboardingFlow = ({ onComplete }: { onComplete: () => void }) => {
                   )}
 
                   <div className="space-y-3">
-                    <label className="text-xs font-medium text-[#a8a8a8] uppercase tracking-wider ml-1">Have you sold digital products before?</label>
+                    <label className="text-xs font-medium text-[#a8a8a8] uppercase tracking-wider ml-1">Have you done brand deals before?</label>
                     <div className="flex flex-wrap gap-2">
-                      {['Yes, on Gumroad or similar', 'Yes, manually via DMs', 'No, this is my first time'].map((option) => (
+                      {['Yes, many', 'A few small ones', 'No, this is my first time'].map((option) => (
                         <button
                           key={option}
                           onClick={() => setFormData({ ...formData, soldBefore: option })}
@@ -1121,62 +1121,50 @@ const OnboardingFlow = ({ onComplete }: { onComplete: () => void }) => {
             >
               <div className="glass-card p-8 md:p-10 rounded-[32px] border border-white/10 bg-white/5 backdrop-blur-xl">
                 <div className="text-center mb-10">
-                  <h1 className="common-title text-3xl md:text-4xl mb-3">Upload your first product</h1>
+                  <h1 className="common-title text-3xl md:text-4xl mb-3">Set your negotiation rules</h1>
                   <p className="text-[#a8a8a8] text-sm leading-relaxed">
-                    You are one step away from your first sale. Creators who upload on day one earn 3x faster.
+                    Tell the AI your boundaries. It will enforce these in every conversation.
                   </p>
                 </div>
 
                 <div className="space-y-6">
                   <div className="space-y-2">
-                    <label className="text-xs font-medium text-[#a8a8a8] uppercase tracking-wider ml-1">Product Name</label>
-                    <input 
-                      type="text" 
-                      placeholder="e.g. Notion Finance Template"
-                      value={formData.productName}
-                      onChange={(e) => setFormData({ ...formData, productName: e.target.value })}
-                      className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/20 focus:outline-none focus:border-white/30 transition-colors"
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <label className="text-xs font-medium text-[#a8a8a8] uppercase tracking-wider ml-1">Price</label>
+                    <label className="text-xs font-medium text-[#a8a8a8] uppercase tracking-wider ml-1">Minimum deal size ($)</label>
                     <div className="relative">
                       <div className="absolute left-4 top-1/2 -translate-y-1/2 text-white/40 text-sm">$</div>
                       <input 
                         type="number" 
-                        placeholder="19"
-                        disabled={formData.isFree}
-                        value={formData.isFree ? '0' : formData.price}
+                        placeholder="500"
+                        value={formData.price}
                         onChange={(e) => setFormData({ ...formData, price: e.target.value })}
-                        className="w-full bg-white/5 border border-white/10 rounded-xl pl-8 pr-4 py-3 text-white placeholder:text-white/20 focus:outline-none focus:border-white/30 transition-colors disabled:opacity-50"
+                        className="w-full bg-white/5 border border-white/10 rounded-xl pl-8 pr-4 py-3 text-white placeholder:text-white/20 focus:outline-none focus:border-white/30 transition-colors"
                       />
                     </div>
-                    <div className="flex items-center gap-2 ml-1 mt-2">
-                      <button 
-                        onClick={() => setFormData({ ...formData, isFree: !formData.isFree })}
-                        className={`w-8 h-4 rounded-full relative transition-colors ${formData.isFree ? 'bg-[#ff007f]' : 'bg-white/20'}`}
-                      >
-                        <div className={`absolute top-0.5 w-3 h-3 rounded-full bg-white transition-all ${formData.isFree ? 'left-4.5' : 'left-0.5'}`} />
-                      </button>
-                      <span className="text-[10px] text-[#a8a8a8] uppercase tracking-wider">Make it free</span>
+                    <p className="text-[10px] text-[#a8a8a8] ml-1">The AI will decline offers below this amount.</p>
+                  </div>
+
+                  <div className="space-y-3">
+                    <label className="text-xs font-medium text-[#a8a8a8] uppercase tracking-wider ml-1">Brands you won't work with</label>
+                    <div className="border-2 border-dashed border-white/10 rounded-xl p-6 text-center bg-white/5 hover:bg-white/10 transition-colors cursor-pointer group">
+                      <Plus className="w-6 h-6 text-white/20 group-hover:text-white/40 mx-auto mb-2 transition-colors" />
+                      <div className="text-sm text-white mb-1">Add blocked categories</div>
+                      <div className="text-[10px] text-[#a8a8a8]">e.g. Gambling, Adult, Crypto</div>
                     </div>
                   </div>
 
                   <div className="space-y-3">
-                    <label className="text-xs font-medium text-[#a8a8a8] uppercase tracking-wider ml-1">Upload your file</label>
-                    <div className="border-2 border-dashed border-white/10 rounded-xl p-8 text-center bg-white/5 hover:bg-white/10 transition-colors cursor-pointer group">
-                      <Upload className="w-6 h-6 text-white/20 group-hover:text-white/40 mx-auto mb-3 transition-colors" />
-                      <div className="text-sm text-white mb-1">Drag and drop your file here</div>
-                      <div className="text-[10px] text-[#a8a8a8]">PDF · ZIP · MP3 · DOCX · or paste a link below</div>
+                    <label className="text-xs font-medium text-[#a8a8a8] uppercase tracking-wider ml-1">Required lead time</label>
+                    <div className="flex flex-wrap gap-2">
+                      {['1 week', '2 weeks', '1 month', 'Flexible'].map((option) => (
+                        <button
+                          key={option}
+                          onClick={() => setFormData({ ...formData, productLink: option })}
+                          className={`px-4 py-2 rounded-full text-xs font-medium transition-all border ${formData.productLink === option ? 'bg-white text-black border-white' : 'bg-white/5 text-[#a8a8a8] border-white/10 hover:border-white/30'}`}
+                        >
+                          {option}
+                        </button>
+                      ))}
                     </div>
-                    <input 
-                      type="text" 
-                      placeholder="Or paste a Google Drive / Notion link"
-                      value={formData.productLink}
-                      onChange={(e) => setFormData({ ...formData, productLink: e.target.value })}
-                      className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/20 focus:outline-none focus:border-white/30 transition-colors"
-                    />
                   </div>
 
                   <div className="pt-2">
@@ -1184,13 +1172,13 @@ const OnboardingFlow = ({ onComplete }: { onComplete: () => void }) => {
                       onClick={nextStep}
                       className="common-button common-button-primary w-full py-4 text-sm font-bold flex items-center justify-center gap-2 group"
                     >
-                      Publish my first product <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      Activate my agent <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </button>
                     <button 
                       onClick={nextStep}
                       className="w-full text-center mt-4 text-xs text-[#a8a8a8] hover:text-white transition-colors"
                     >
-                      I'll do this later
+                      I'll set this up later
                     </button>
                   </div>
                 </div>
@@ -1210,9 +1198,9 @@ const OnboardingFlow = ({ onComplete }: { onComplete: () => void }) => {
                 <div className="w-20 h-20 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-8">
                   <Check className="w-10 h-10 text-green-500" />
                 </div>
-                <h1 className="common-title text-3xl md:text-4xl mb-4">Your store is live at dropl.io/{formData.username || 'username'} 🎉</h1>
+                <h1 className="common-title text-3xl md:text-4xl mb-4">Your AI agent is live at sponsorai.co/{formData.username || 'username'} 🎉</h1>
                 <p className="text-[#a8a8a8] text-sm mb-10 leading-relaxed">
-                  Congratulations! You're ready to start selling. Your dashboard is now set up and waiting for your first sale.
+                  Congratulations! Your agent is now monitoring for brand opportunities. You'll receive your first draft within 24 hours.
                 </p>
                 <button 
                   onClick={onComplete}
@@ -1227,7 +1215,7 @@ const OnboardingFlow = ({ onComplete }: { onComplete: () => void }) => {
       </main>
 
       <footer className="relative z-10 py-8 text-center text-[10px] text-[#a8a8a8] uppercase tracking-widest">
-        © 2025 Dropl · All rights reserved
+        © 2025 SponsorAI · All rights reserved
       </footer>
     </div>
   );
