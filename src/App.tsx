@@ -1160,8 +1160,8 @@ const OnboardingFlow = ({ onComplete }: { onComplete: () => void }) => {
 
 
           {/* ── STEP 3 — PREFERENCES ──────────────────────────────────── */}
-          {step === 3 && (
-            <motion.div
+         {step === 3 && (
+            <motion.div 
               key="step3"
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -1170,92 +1170,89 @@ const OnboardingFlow = ({ onComplete }: { onComplete: () => void }) => {
             >
               <div className="glass-card p-8 md:p-10 rounded-[32px] border border-white/10 bg-white/5 backdrop-blur-xl">
                 <div className="text-center mb-10">
-                  <h1 className="common-title text-3xl md:text-4xl mb-3">Set your negotiation rules</h1>
+                  <h1 className="common-title text-3xl md:text-4xl mb-3">About your content</h1>
                   <p className="text-[#a8a8a8] text-sm leading-relaxed">
-                    Tell the AI your boundaries. It will enforce these in every brand conversation.
+                    This helps your agent understand your work so it pitches you accurately to brands.
                   </p>
                 </div>
 
 
                 <div className="space-y-6">
-                  {/* Min Deal Rate */}
+
+                  {/* Content Format */}
+                  <div className="space-y-3">
+                    <label className="text-xs font-medium text-[#a8a8a8] uppercase tracking-wider ml-1">What type of content do you make?</label>
+                    <div className="flex flex-wrap gap-2">
+                      {['Long-form videos', 'Short-form / Reels', 'Podcasts', 'Written articles', 'Live streams', 'Photo posts', 'Mixed'].map((option) => (
+                        <button
+                          key={option}
+                          onClick={() => setFormData({ ...formData, contentFormat: option })}
+                          className={`px-4 py-2 rounded-full text-xs font-medium transition-all border ${formData.contentFormat === option ? 'bg-white text-black border-white' : 'bg-white/5 text-[#a8a8a8] border-white/10 hover:border-white/30'}`}
+                        >
+                          {option}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+
+
+                  {/* Posting Frequency */}
+                  <div className="space-y-3">
+                    <label className="text-xs font-medium text-[#a8a8a8] uppercase tracking-wider ml-1">How often do you post?</label>
+                    <div className="flex flex-wrap gap-2">
+                      {['Daily', '3–5x a week', 'Once a week', 'A few times a month', 'Irregular'].map((option) => (
+                        <button
+                          key={option}
+                          onClick={() => setFormData({ ...formData, postingFrequency: option })}
+                          className={`px-4 py-2 rounded-full text-xs font-medium transition-all border ${formData.postingFrequency === option ? 'bg-white text-black border-white' : 'bg-white/5 text-[#a8a8a8] border-white/10 hover:border-white/30'}`}
+                        >
+                          {option}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+
+
+                  {/* Language */}
                   <div className="space-y-2">
-                    <label className="text-xs font-medium text-[#a8a8a8] uppercase tracking-wider ml-1">Minimum deal rate ($)</label>
-                    <div className="relative">
-                      <div className="absolute left-4 top-1/2 -translate-y-1/2 text-white/40 text-sm">$</div>
-                      <input
-                        type="number"
-                        placeholder="500"
-                        value={formData.minDealRate}
-                        onChange={(e) => setFormData({ ...formData, minDealRate: e.target.value })}
-                        className="w-full bg-white/5 border border-white/10 rounded-xl pl-8 pr-4 py-3 text-white placeholder:text-white/20 focus:outline-none focus:border-white/30 transition-colors"
-                      />
-                    </div>
-                    <p className="text-[10px] text-[#a8a8a8] ml-1">The AI will decline offers below this amount automatically.</p>
+                    <label className="text-xs font-medium text-[#a8a8a8] uppercase tracking-wider ml-1">Language you create content in</label>
+                    <input 
+                      type="text" 
+                      placeholder="e.g. English, Hindi, Spanish"
+                      value={formData.contentLanguage}
+                      onChange={(e) => setFormData({ ...formData, contentLanguage: e.target.value })}
+                      className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/20 focus:outline-none focus:border-white/30 transition-colors"
+                    />
+                    <p className="text-[10px] text-[#a8a8a8] ml-1">Helps match you with brands targeting the right language market.</p>
                   </div>
 
 
-                  {/* Blocked Categories */}
+                  {/* Creator Goal */}
                   <div className="space-y-3">
-                    <label className="text-xs font-medium text-[#a8a8a8] uppercase tracking-wider ml-1">Brands you won't work with</label>
+                    <label className="text-xs font-medium text-[#a8a8a8] uppercase tracking-wider ml-1">What is your main goal right now?</label>
                     <div className="flex flex-wrap gap-2">
-                      {['Gambling', 'Alcohol', 'Adult Content', 'Crypto / NFT', 'Fast Fashion', 'Tobacco', 'Payday Loans', 'MLM / Pyramid'].map((option) => (
+                      {['Land my first deal', 'Get higher rates', 'Find long-term brand partners', 'Do more deals volume', 'Build my media kit'].map((option) => (
                         <button
                           key={option}
-                          onClick={() => toggleBlockedCategory(option)}
-                          className={`px-4 py-2 rounded-full text-xs font-medium transition-all border ${formData.blockedCategories.includes(option) ? 'bg-white text-black border-white' : 'bg-white/5 text-[#a8a8a8] border-white/10 hover:border-white/30'}`}
+                          onClick={() => setFormData({ ...formData, creatorGoal: option })}
+                          className={`px-4 py-2 rounded-full text-xs font-medium transition-all border ${formData.creatorGoal === option ? 'bg-white text-black border-white' : 'bg-white/5 text-[#a8a8a8] border-white/10 hover:border-white/30'}`}
                         >
                           {option}
                         </button>
                       ))}
                     </div>
-                    <p className="text-[10px] text-[#a8a8a8] ml-1">The AI will auto-reject any inquiry from these categories.</p>
-                  </div>
-
-
-                  {/* Lead Time */}
-                  <div className="space-y-3">
-                    <label className="text-xs font-medium text-[#a8a8a8] uppercase tracking-wider ml-1">Required lead time</label>
-                    <div className="flex flex-wrap gap-2">
-                      {['1 week', '2 weeks', '1 month', 'Flexible'].map((option) => (
-                        <button
-                          key={option}
-                          onClick={() => setFormData({ ...formData, leadTime: option })}
-                          className={`px-4 py-2 rounded-full text-xs font-medium transition-all border ${formData.leadTime === option ? 'bg-white text-black border-white' : 'bg-white/5 text-[#a8a8a8] border-white/10 hover:border-white/30'}`}
-                        >
-                          {option}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-
-
-                  {/* Negotiation Style */}
-                  <div className="space-y-3">
-                    <label className="text-xs font-medium text-[#a8a8a8] uppercase tracking-wider ml-1">How should the AI negotiate for you?</label>
-                    <div className="flex flex-wrap gap-2">
-                      {['Firm — never discount', 'Flexible on price', 'Value fit over money', 'Get as many deals as possible'].map((option) => (
-                        <button
-                          key={option}
-                          onClick={() => setFormData({ ...formData, negotiationStyle: option })}
-                          className={`px-4 py-2 rounded-full text-xs font-medium transition-all border ${formData.negotiationStyle === option ? 'bg-white text-black border-white' : 'bg-white/5 text-[#a8a8a8] border-white/10 hover:border-white/30'}`}
-                        >
-                          {option}
-                        </button>
-                      ))}
-                    </div>
-                    <p className="text-[10px] text-[#a8a8a8] ml-1">This shapes how your agent handles every offer it receives.</p>
                   </div>
 
 
                   <div className="pt-2">
-                    <button
+                    <button 
                       onClick={nextStep}
-                      className="common-button common-button-primary w-full py-4 text-sm font-bold flex items-center justify-center gap-2 group"
+                      disabled={!formData.contentFormat || !formData.postingFrequency || !formData.creatorGoal}
+                      className="common-button common-button-primary w-full py-4 text-sm font-bold flex items-center justify-center gap-2 group disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                       Activate my agent <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </button>
-                    <button
+                    <button 
                       onClick={nextStep}
                       className="w-full text-center mt-4 text-xs text-[#a8a8a8] hover:text-white transition-colors"
                     >
@@ -1265,6 +1262,8 @@ const OnboardingFlow = ({ onComplete }: { onComplete: () => void }) => {
                 </div>
                 {renderStepIndicator()}
               </div>
+            </motion.div>
+          )}iv>
             </motion.div>
           )}
 
