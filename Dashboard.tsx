@@ -37,7 +37,7 @@ import {
   Filter,
   Download,
   AlertCircle,
-  CheckCheck,
+  CheckCircle2,
   Inbox,
   Target
 } from 'lucide-react';
@@ -367,7 +367,7 @@ function OverviewPage() {
               color="text-blue" 
             />
             <ActivityItem 
-              icon={CheckCheck} 
+              icon={CheckCircle2} 
               title="Deal closed: Notion" 
               time="1 hour ago" 
               amount="+$1,200" 
