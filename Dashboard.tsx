@@ -3,7 +3,7 @@ import {
   LayoutDashboard, 
   Mail,
   Users, 
-  Handshake,
+  Link2,
   Send,
   Zap,
   DollarSign,
