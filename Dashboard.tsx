@@ -69,7 +69,7 @@ export default function Dashboard({ onLogout }: { onLogout?: () => void }) {
     { id: 'overview',  label: 'Home',       icon: LayoutDashboard },
     { id: 'inbox',     label: 'Inbox',       icon: Mail },
     { id: 'brands',    label: 'Brands',      icon: Users },
-    { id: 'deals',     label: 'Deals',       icon: Handshake },
+    { id: 'deals',     label: 'Deals',       icon: Link2 },
     { id: 'outreach',  label: 'Outreach',    icon: Send },
     { id: 'agent',     label: 'Agent',       icon: Zap },
     { id: 'earnings',  label: 'Earnings',    icon: DollarSign },
@@ -623,7 +623,7 @@ function DealsPage() {
         </div>
         <div className="p-20 flex flex-col items-center justify-center text-center">
           <div className="w-20 h-20 bg-black/[0.02] border border-border rounded-2xl flex items-center justify-center mb-6">
-            <Handshake className="w-10 h-10 text-text-dim" />
+            <Link2 className="w-10 h-10 text-text-dim" />
           </div>
           <h3 className="text-2xl font-display italic mb-3">Your deals pipeline</h3>
           <p className="text-text-muted max-w-md leading-relaxed">Every brand negotiation your agent handles will appear here, with full draft history and approval controls.</p>
