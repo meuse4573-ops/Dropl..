@@ -1263,7 +1263,8 @@ const OnboardingFlow = ({ onComplete }: { onComplete: () => void }) => {
                 {renderStepIndicator()}
               </div>
             </motion.div>
-          )}iv>
+          )}
+        </div>
             </motion.div>
           )}
 
