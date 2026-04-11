@@ -1264,9 +1264,6 @@ const OnboardingFlow = ({ onComplete }: { onComplete: () => void }) => {
               </div>
             </motion.div>
           )}
-        </div>
-            </motion.div>
-          )}
 
 
           {/* ── STEP 4 — SUCCESS ──────────────────────────────────────── */}
