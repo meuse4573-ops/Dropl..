@@ -1273,6 +1273,12 @@ const OnboardingFlow = ({ onComplete }: { onComplete: () => void }) => {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               className="w-full max-w-md"
+            {step === 4 && (
+            <motion.div 
+              key="success"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              className="w-full max-w-md"
             >
               <div className="glass-card p-8 md:p-10 rounded-[32px] border border-white/10 bg-white/5 backdrop-blur-xl text-center">
                 <div className="w-20 h-20 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-8">
@@ -1284,7 +1290,7 @@ const OnboardingFlow = ({ onComplete }: { onComplete: () => void }) => {
                 <p className="text-[#a8a8a8] text-sm mb-10 leading-relaxed">
                   Your agent is now ready to research brands, triage your inbox, and negotiate deals — all on autopilot. You'll receive your first draft within 24 hours.
                 </p>
-                <button
+                <button 
                   onClick={onComplete}
                   className="common-button common-button-primary w-full py-4 text-sm font-bold flex items-center justify-center gap-2 group"
                 >
@@ -1293,10 +1299,8 @@ const OnboardingFlow = ({ onComplete }: { onComplete: () => void }) => {
               </div>
             </motion.div>
           )}
-        </div>
         </AnimatePresence>
       </main>
-
 
       <footer className="relative z-10 py-8 text-center text-[10px] text-[#a8a8a8] uppercase tracking-widest">
         © 2025 SponsorAI · All rights reserved
@@ -1305,4 +1309,4 @@ const OnboardingFlow = ({ onComplete }: { onComplete: () => void }) => {
   );
 };
 
-export default app;
+export default App;
