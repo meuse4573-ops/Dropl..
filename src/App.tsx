@@ -1293,7 +1293,7 @@ const OnboardingFlow = ({ onComplete }: { onComplete: () => void }) => {
               </div>
             </motion.div>
           )}
-
+        </div>
         </AnimatePresence>
       </main>
 
@@ -1304,3 +1304,5 @@ const OnboardingFlow = ({ onComplete }: { onComplete: () => void }) => {
     </div>
   );
 };
+
+export default app;
